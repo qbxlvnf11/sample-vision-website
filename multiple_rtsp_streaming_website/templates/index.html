@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Multiple CCTV RTSP Control System</h1>
+
+    <div class="cctv-grid">
+        {% for i in range(num_cameras) %}
+        <div class="cctv-container">
+            <h3>Camera {{ i + 1 }}</h3>
+            <h5>({{ camera_urls[i] }})</h5>
+            <img id="cam{{ i }}" src="{{ url_for('video_feed', camera_id=i) }}" alt="Camera {{ i + 1 }} Feed">
+        </div>
+        {% endfor %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

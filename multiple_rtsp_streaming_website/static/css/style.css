@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  margin: 15px;
+  background-color: #f4f4f4;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.cctv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.cctv-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+.cctv-container h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  color: #555;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+.cctv-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}

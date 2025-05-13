@@ -1,0 +1,16 @@
+app:
+  host: 0.0.0.0
+  port: 5001
+  debug: false
+
+cameras:
+  - rtsp://210.99.70.120:1935/live/cctv002.stream
+  - rtsp://210.99.70.120:1935/live/cctv004.stream
+  - rtsp://210.99.70.120:1935/live/cctv034.stream
+  - rtsp://210.99.70.120:1935/live/cctv050.stream
+  - rtsp://210.99.70.120:1935/live/cctv020.stream
+  - rtsp://210.99.70.120:1935/live/cctv025.stream
+  - rtsp://210.99.70.120:1935/live/cctv049.stream
+  - rtsp://210.99.70.120:1935/live/cctv035.stream
+  - rtsp://210.99.70.120:1935/live/cctv045.stream
+  - rtsp://210.99.70.120:1935/live/cctv044.stream
